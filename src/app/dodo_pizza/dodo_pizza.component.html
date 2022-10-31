@@ -1,0 +1,21 @@
+<header>
+</header>
+
+<nav>
+  <div>
+    <button data-size="medium" data-type="primary" class="cpUbDl">Корзина</button>
+  </div>
+  <div>
+    <h2 class="sc-1n2d0ov-0 cgxKgX">Пицца</h2>
+  </div>
+  <div *ngIf = "arr && arr.length" class="block">
+    <div *ngFor="let item of arr">
+      <div>
+        <p><img src="assets/images/{{item.image}}" alt="" class="photo"></p>
+        <div class="name_position"><p class="pizzasName">{{item.name}}</p></div>
+        <div class="descript_position"><p class="jbQjVh">{{item.description}}<p></div>
+        <p class="position_of_price product-control-price">От {{item.price}} руб <button (click)="addPizza()" data-type="secondary" data-size="medium" class="bth jFZvXc">Выбрать</button><p>
+      </div>
+    </div>
+  </div>
+</nav>
