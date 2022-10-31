@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { DodoComponent } from './dodo_pizza/dodo_pizza.component';
 import { DodoService } from './pizza_service/dodo_pizza.service';
 import { HttpClientModule } from '@angular/common/http';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DodoComponent
+    DodoComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

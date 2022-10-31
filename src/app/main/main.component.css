@@ -1,0 +1,29 @@
+.body{
+  display: block;
+  justify-content: center;
+}
+
+.main{
+  justify-content: center;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  position: relative;
+  left: 1000px;
+  right: 100px;
+  top: 10px;
+}
+
+.main_bth{
+  display: block;
+  background-color: rgb(255, 105, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  border: none;
+  /* margin-left: 1000px; */
+  height: 40px;
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+

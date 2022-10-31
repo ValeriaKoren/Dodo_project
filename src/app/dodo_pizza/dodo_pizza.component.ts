@@ -16,6 +16,7 @@ export class DodoComponent implements OnInit{
 
   arr: IPizza[] = [];
   position_counter = 0;
+  full_price = 0;
 
   ngOnInit(): void {
     this.Dodo.getPizzaList().subscribe(x=>{
