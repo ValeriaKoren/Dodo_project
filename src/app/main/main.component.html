@@ -1,18 +1,8 @@
 <body class="body">
   <div class="main">
-    <button class="main_bth">
-      <a href="popup" class="bth">Корзина</a>
+    <button class="main_bth" (click)="openWindow()">
+      Корзина
     </button>
   </div>
-  <div id="popup" class="popup">
-    <div class="popup_body">
-      <div class="popup_content">
-        <a href="#" class="popup_close">X</a>
-        <div class="popup_title">Ой, пусто!</div>
-        <div class="popup_text">Ваша корзина пуста, откройте «Меню»
-          и выберите понравившийся товар.
-          Мы доставим ваш заказ от 549 ₽</div>
-      </div>
-    </div>
-  </div>
+  <app-cart #cartComponent></app-cart>
 </body>

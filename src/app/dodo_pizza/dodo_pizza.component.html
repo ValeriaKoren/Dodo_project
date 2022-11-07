@@ -1,6 +1,6 @@
-  <div>
-    <h2 class="cgxKgX">Пицца</h2>
-  </div>
+<div>
+  <h2 class="cgxKgX">Пицца</h2>
+</div>
 
   <div *ngIf = "arr && arr.length" class="block">
     <div *ngFor="let item of arr">
@@ -8,7 +8,9 @@
         <p><img src="assets/images/{{item.image}}" alt="" class="photo"></p>
         <div class="name_position"><p class="pizzasName">{{item.name}}</p></div>
         <div class="descript_position"><p class="jbQjVh">{{item.description}}<p></div>
-        <p class="position_of_price product-control-price">От {{item.price}} руб <button (click)="addPizza()" data-type="secondary" data-size="medium" class="bth jFZvXc">Выбрать</button><p>
+        <p class="position_of_price product-control-price">От {{item.price}} руб <button (click)="addPizza(); openPizzaWindow()" data-type="secondary" data-size="medium" class="bth jFZvXc">Выбрать</button><p>
       </div>
     </div>
+    <app-window #pizzaWindowComponent></app-window>
   </div>
+

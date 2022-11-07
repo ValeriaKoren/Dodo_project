@@ -1,0 +1,13 @@
+<div class="popup" [ngStyle]="{'display':Wind === true ? 'block' : 'none' }">
+  <a href="#" class="popup_area"></a>
+  <div class="popup_body">
+    <div class="popup_content">
+      <span class="popup_close" (click)="Close()">X</span>
+      <img src="assets/images/dog.svg" alt="" class="dogsphoto">
+      <div class="popup_title">Ой, пусто!</div>
+      <div class="popup_text"><p>Ваша корзина пуста, откройте «Меню»</p>
+        <p>и выберите понравившийся товар.</p>
+        <p>Мы доставим ваш заказ от 549 ₽</p></div>
+    </div>
+  </div>
+</div>

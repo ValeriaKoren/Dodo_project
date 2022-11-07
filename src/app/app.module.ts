@@ -7,12 +7,16 @@ import { DodoComponent } from './dodo_pizza/dodo_pizza.component';
 import { DodoService } from './pizza_service/dodo_pizza.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main/main.component';
+import { CartComponent } from './modal-window/modal-window.component';
+import { PizzaWindowComponent } from './pizza-modal/pizza-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DodoComponent,
-    MainComponent
+    MainComponent,
+    CartComponent,
+    PizzaWindowComponent
   ],
   imports: [
     BrowserModule,
